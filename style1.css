@@ -1,0 +1,191 @@
+ /* fixed */
+@import url('https://fonts.googleapis.com/css2?family=Original+Surfer&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oregano:ital@0;1&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --head : 2rem;
+    --headcolor: rgb(2, 2, 87);
+    --maincolor : #B0C4DE;
+    --backcolor : #b0c4de84;
+    --footcolor : #E10EE6;
+    --footfont :  "Oregano", cursive;
+    --headfont :  'Noto Serif', serif;
+    --font: "Original Surfer", sans-serif ;
+}
+
+body
+{
+background-color: var(--maincolor);
+ } 
+/* fixed */
+/* head */
+.head img{
+    width: 59px;
+    height: auto;
+    border-radius: 45px ;
+}
+
+.head{
+    gap: 26px;
+    padding: 20px;
+    display: flex;
+    height: 100%;
+    font-family:var(--headfont);
+    background-color:var(--maincolor);
+    flex-basis: 100%;
+    overflow-y: auto;
+    align-items: center;
+    justify-content: center;
+    border-style: solid;
+    border-radius: 0px 0px 10px 10px;
+    border-color: rgba(0, 0, 0, 0.342);
+    border-width: 1px;
+}
+.head h1{
+    color: var(--headcolor) ;
+    font-size: var(--head);
+}
+/* head */
+
+main{
+  display: grid;
+  place-items: center;
+}
+
+.create{
+  margin-top: 15%;
+  margin-bottom: 12%;
+  /* height: 100%; */
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: solid black 1px;
+  border-radius: 18px;
+  font-family: var(--font);
+  background-color: var(--backcolor);
+ /*  flex-basis: 100%; */
+  overflow-y: auto;
+  background-color: white;
+  text-shadow: #B0C4DE;
+  
+
+}
+
+.create a{
+    text-decoration: none;
+    font-family: var(--font);
+    color: red; 
+    font-weight: bolder;
+    cursor: pointer;
+    transition: transform 0.5s ease, background-color 0.3s ease;
+}
+
+.create:hover{  
+        transform: scale(1.1);
+        background-color: #2980b9;
+}
+
+/* a:hover{    
+  
+} */
+
+.foot{
+    display: flex;
+    justify-content: center;
+    font-family: var(--footfont);
+    color: var(--footcolor);
+    font-size: 32px;
+}
+
+/* mobile */
+@media screen and (max-width: 360px)
+{
+    body
+    {
+    background-color: var(--maincolor);
+     }
+
+
+ .head img{
+    width: 59px;
+    height: auto;
+    border-radius: 18px ;
+}
+
+.head{
+    gap: 26px;
+    padding: 20px;
+    display: flex;
+    height: 100%;
+    font-family:var(--headfont);
+    background-color:var(--maincolor);
+    flex-basis: 100%;
+    overflow-y: auto;
+    align-items: center;
+    justify-content: center;
+    border-style: solid;
+    border-radius: 0px 0px 10px 10px;
+    border-color: rgba(0, 0, 0, 0.342);
+    border-width: 1px;
+}
+.head h1{
+    color: var(--headcolor) ;
+    font-size: var(--head);
+}
+main{
+  display: grid;
+  place-items: center;
+}
+
+.create{
+  margin-top: 85%;
+  margin-bottom: 75%;
+  /* height: 100%; */
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: solid black 1px;
+  border-radius: 18px;
+  font-family: var(--font);
+  background-color: var(--backcolor);
+ /*  flex-basis: 100%; */
+  overflow-y: auto;
+  background-color: white;
+  text-shadow: #B0C4DE;
+  
+
+}
+
+.create a{
+    text-decoration: none;
+    font-family: var(--font);
+    color: red; 
+    font-weight: bolder;
+    cursor: pointer;
+    transition: transform 0.5s ease, background-color 0.3s ease;
+}
+
+.create:hover{  
+    transform: scale(1.1);
+    background-color: #2980b9;
+}
+
+/* a:hover{    
+  
+} */
+
+.foot{
+    display: flex;
+    justify-content: center;
+    font-family: var(--footfont);
+    color: var(--footcolor);
+    font-size: 32px;
+}
+}
